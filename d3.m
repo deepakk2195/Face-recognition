@@ -1,0 +1,49 @@
+function ark=d3(ark,or,i,j,k)
+p=or(i+7,j+1);q=or(i+7,j+4);x=or(i+7,j+1)-or(i+4,j+4);y=or(i+7,j+4)-or(i+4,j+4);
+if((p-((x./y).*q))>=0)
+    ark(k)=1;k=k+1;
+else
+    ark(k)=0;k=k+1;
+end    
+p=or(i+4,j+1);q=or(i+7,j+1);x=or(i+4,j+1)-or(i+4,j+4);y=or(i+7,j+1)-or(i+4,j+4);
+if((p-((x./y).*q))>=0)
+    ark(k)=1;k=k+1;
+else
+    ark(k)=0;k=k+1;
+end    
+p=or(i+1,j+1);q=or(i+4,j+1);x=or(i+1,j+1)-or(i+4,j+4);y=or(i+4,j+1)-or(i+4,j+4);
+if((p-((x./y).*q))>=0)
+    ark(k)=1;k=k+1;
+else
+    ark(k)=0;k=k+1;
+end    
+p=or(i+1,j+4);q=or(i+1,j+1);x=or(i+1,j+4)-or(i+4,j+4);y=or(i+1,j+1)-or(i+4,j+4);
+if((p-((x./y).*q))>=0)
+    ark(k)=1;k=k+1;
+else
+    ark(k)=0;k=k+1;
+end    
+p=or(i+1,j+7);q=or(i+1,j+4);x=or(i+1,j+7)-or(i+4,j+4);y=or(i+1,j+4)-or(i+4,j+4);
+if((p-((x./y).*q))>=0)
+    ark(k)=1;k=k+1;
+else
+    ark(k)=0;k=k+1;
+end    
+p=or(i+4,j+7);q=or(i+1,j+7);x=or(i+4,j+7)-or(i+4,j+4);y=or(i+1,j+7)-or(i+4,j+4);
+if((p-((x./y).*q))>=0)
+    ark(k)=1;k=k+1;
+else
+    ark(k)=0;k=k+1;
+end    
+p=or(i+7,j+7);q=or(i+4,j+7);x=or(i+7,j+7)-or(i+4,j+4);y=or(i+4,j+7)-or(i+4,j+4);
+if((p-((x./y).*q))>=0)
+    ark(k)=1;k=k+1;
+else
+    ark(k)=0;k=k+1;
+end    
+p=or(i+7,j+4);q=or(i+7,j+7);x=or(i+7,j+4)-or(i+4,j+4);y=or(i+7,j+7)-or(i+4,j+4);
+if((p-((x./y).*q))>=0)
+    ark(k)=1;k=k+1;
+else
+    ark(k)=0;k=k+1;
+end    
